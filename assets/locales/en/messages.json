@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "UnitBuddy",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Example using locales + i18n!",
+    "description": "Description of the extension."
+  }
+}

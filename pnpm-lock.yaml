@@ -2,10 +2,15 @@ lockfileVersion: 5.4
 
 specifiers:
   '@plasmohq/prettier-plugin-sort-imports': 3.6.0
+  '@plasmohq/storage': ^0.13.0
   '@types/chrome': 0.0.202
+  '@types/lodash': ^4.14.190
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
+  fp-ts: ^2.13.1
+  io-ts: ^2.2.19
+  lodash: ^4.17.21
   plasmo: 0.59.1
   prettier: 2.7.1
   react: 18.2.0
@@ -13,13 +18,18 @@ specifiers:
   typescript: 4.9.3
 
 dependencies:
-  plasmo: 0.59.1_biqbaboplfbrettd7655fr4n2y
+  '@plasmohq/storage': 0.13.0_react@18.2.0
+  fp-ts: 2.13.1
+  io-ts: 2.2.19_fp-ts@2.13.1
+  lodash: 4.17.21
+  plasmo: 0.59.1_pvnihi4muhoy7kenlmiyxwzuqy
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
   '@plasmohq/prettier-plugin-sort-imports': 3.6.0_prettier@2.7.1
   '@types/chrome': 0.0.202
+  '@types/lodash': 4.14.190
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -1139,7 +1149,7 @@ packages:
       nullthrows: 1.1.1
     dev: false
 
-  /@plasmohq/consolidate/0.17.0_biqbaboplfbrettd7655fr4n2y:
+  /@plasmohq/consolidate/0.17.0_pvnihi4muhoy7kenlmiyxwzuqy:
     resolution: {integrity: sha512-Na8imBnvzYPtzkK+9Uv9hPZ/oJti/0jgiQWD222SHxHw2QCVuR4KzslxXCy/rS8gGluSiTs1BGVvc3d2O6aJCA==}
     engines: {node: '>= 0.10.0'}
     peerDependencies:
@@ -1284,6 +1294,7 @@ packages:
         optional: true
     dependencies:
       bluebird: 3.7.2
+      lodash: 4.17.21
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
@@ -1304,7 +1315,7 @@ packages:
       nullthrows: 1.1.1
     dev: false
 
-  /@plasmohq/parcel-config/0.23.0_biqbaboplfbrettd7655fr4n2y:
+  /@plasmohq/parcel-config/0.23.0_pvnihi4muhoy7kenlmiyxwzuqy:
     resolution: {integrity: sha512-4TLLoQ9yaYJ2iSyyMYLdxNrJpupmMKjJrb6rNAlhGdKVdJnKxQWziEAsBff3dPIuxea/QsVdgRJvXI6lxR3VEA==}
     dependencies:
       '@parcel/config-default': 2.8.0_@parcel+core@2.8.0
@@ -1331,7 +1342,7 @@ packages:
       '@plasmohq/parcel-transformer-inline-css': 0.2.0
       '@plasmohq/parcel-transformer-manifest': 0.12.0
       '@plasmohq/parcel-transformer-svelte3': 0.3.0
-      '@plasmohq/parcel-transformer-vue3': 0.3.0_biqbaboplfbrettd7655fr4n2y
+      '@plasmohq/parcel-transformer-vue3': 0.3.0_pvnihi4muhoy7kenlmiyxwzuqy
     transitivePeerDependencies:
       - '@swc/core'
       - arc-templates
@@ -1496,7 +1507,7 @@ packages:
       '@parcel/utils': 2.8.0
     dev: false
 
-  /@plasmohq/parcel-transformer-vue3/0.3.0_biqbaboplfbrettd7655fr4n2y:
+  /@plasmohq/parcel-transformer-vue3/0.3.0_pvnihi4muhoy7kenlmiyxwzuqy:
     resolution: {integrity: sha512-cJ8/ODfMynZT27JCSQBlwEj2oC8hk2NqBwcElGLh2lRo82Iq9jqzPSnXRXrrWSBnS8Vh39Dv1a9l6XDBxfnGWg==}
     engines: {parcel: '>= 2.7.0'}
     dependencies:
@@ -1506,7 +1517,7 @@ packages:
       '@parcel/source-map': 2.1.1
       '@parcel/types': 2.8.0_@parcel+core@2.8.0
       '@parcel/utils': 2.8.0
-      '@plasmohq/consolidate': 0.17.0_biqbaboplfbrettd7655fr4n2y
+      '@plasmohq/consolidate': 0.17.0_pvnihi4muhoy7kenlmiyxwzuqy
       '@vue/compiler-sfc': 3.2.45
       nullthrows: 1.1.1
       semver: 7.3.8
@@ -1577,6 +1588,18 @@ packages:
       - supports-color
     dev: true
 
+  /@plasmohq/storage/0.13.0_react@18.2.0:
+    resolution: {integrity: sha512-GrJ1jR323NbFjtxcRbR4E5/+nMqvcM+iecCbdVQ489o9u1dAOo4G0KLu3QRbIkIZJmMV9R+ce4CQ6j0D44p6fw==}
+    peerDependencies:
+      react: ^16.8.6 || ^17 || ^18
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      webextension-polyfill: 0.10.0
+    dev: false
+
   /@pnpm/network.ca-file/1.0.2:
     resolution: {integrity: sha512-YcPQ8a0jwYU9bTdJDpXjMi7Brhkr1mXsXrUJvjqM2mQDgkRiz8jFaQGOdaLxgjtUfQgZhKy/O3cG/YwmgKaxLA==}
     engines: {node: '>=12.22.0'}
@@ -1643,6 +1666,10 @@ packages:
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: false
+
+  /@types/lodash/4.14.190:
+    resolution: {integrity: sha512-5iJ3FBJBvQHQ8sFhEhJfjUP+G+LalhavTkYyrAYqz5MEJG+erSv0k9KJLb6q7++17Lafk1scaTIFXcMJlwK8Mw==}
+    dev: true
 
   /@types/node/18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
@@ -2691,6 +2718,10 @@ packages:
     engines: {node: '>= 14.17'}
     dev: false
 
+  /fp-ts/2.13.1:
+    resolution: {integrity: sha512-0eu5ULPS2c/jsa1lGFneEFFEdTbembJv8e4QKXeVJ3lm/5hyve06dlKZrpxmMwJt6rYen7sxmHHK2CLaXvWuWQ==}
+    dev: false
+
   /fs-constants/1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
     dev: false
@@ -2974,6 +3005,14 @@ packages:
       strip-ansi: 7.0.1
       through: 2.3.8
       wrap-ansi: 8.0.1
+    dev: false
+
+  /io-ts/2.2.19_fp-ts@2.13.1:
+    resolution: {integrity: sha512-ED0GQwvKRr5C2jqOOJCkuJW2clnbzqFexQ8V7Qsb+VB36S1Mk/OKH7k0FjSe4mjKy9qBRA3OqgVGyFMUEKIubw==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.13.1
     dev: false
 
   /is-arrayish/0.2.1:
@@ -3677,7 +3716,7 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /plasmo/0.59.1_biqbaboplfbrettd7655fr4n2y:
+  /plasmo/0.59.1_pvnihi4muhoy7kenlmiyxwzuqy:
     resolution: {integrity: sha512-xdDyYNK4RjgYbps0x1EJlNtCtk3MU0pMaRlxJ+LPz8jX6EyuW56pGNZuN1EJATKHvC2F98nZEG44AJEtIJGZqA==}
     hasBin: true
     dependencies:
@@ -3687,7 +3726,7 @@ packages:
       '@parcel/package-manager': 2.8.0_@parcel+core@2.8.0
       '@parcel/watcher': 2.0.7
       '@plasmohq/init': 0.5.1
-      '@plasmohq/parcel-config': 0.23.0_biqbaboplfbrettd7655fr4n2y
+      '@plasmohq/parcel-config': 0.23.0_pvnihi4muhoy7kenlmiyxwzuqy
       archiver: 5.3.1
       buffer: 6.0.3
       chalk: 5.1.2
@@ -4507,6 +4546,10 @@ packages:
 
   /weak-lru-cache/1.2.2:
     resolution: {integrity: sha512-DEAoo25RfSYMuTGc9vPJzZcZullwIqRDSI9LOy+fkCJPi6hykCnfKaXTuPBDuXAUcqHXyOgFtHNp/kB2FjYHbw==}
+    dev: false
+
+  /webextension-polyfill/0.10.0:
+    resolution: {integrity: sha512-c5s35LgVa5tFaHhrZDnr3FpQpjj1BB+RXhLTYUxGqBVN460HkbM8TBtEqdXWbpTKfzwCcjAZVF7zXCYSKtcp9g==}
     dev: false
 
   /webidl-conversions/4.0.2:
