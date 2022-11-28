@@ -1,9 +1,9 @@
-import "./index.css"
-
 import { useEffect } from "react"
+import styled from "styled-components"
 
 import { useStorage } from "@plasmohq/storage/hook"
 
+import GlobalStyle from "~styles/global"
 import type { ExtensionSettings } from "~types/settings-types"
 
 function OptionsPage() {
@@ -13,7 +13,16 @@ function OptionsPage() {
     console.log(settings)
   }, [settings])
 
-  return <div id="options-main-container">{JSON.stringify(settings)}</div>
+  return (
+    <Container>
+      <GlobalStyle />
+      {JSON.stringify(settings)}
+    </Container>
+  )
 }
+
+const Container = styled.div`
+  background-color: red;
+`
 
 export default OptionsPage
