@@ -1,28 +1,31 @@
-import { useEffect } from "react"
 import styled from "styled-components"
 
-import { useStorage } from "@plasmohq/storage/hook"
+import "./index.css"
 
 import GlobalStyle from "~styles/global"
-import type { ExtensionSettings } from "~types/settings-types"
+
+import ContentPane from "./components/content-pane"
 
 function OptionsPage() {
-  const [settings, setSettings] = useStorage<ExtensionSettings>("settings")
-
-  useEffect(() => {
-    console.log(settings)
-  }, [settings])
-
   return (
-    <Container>
+    <>
       <GlobalStyle />
-      {JSON.stringify(settings)}
-    </Container>
+      <Container>
+        <ContentPane />
+      </Container>
+    </>
   )
 }
 
 const Container = styled.div`
-  background-color: red;
+  background-color: hsl(var(--colors-gray-3));
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 500;
 `
 
 export default OptionsPage

@@ -6,5 +6,117 @@
   "extensionDescription": {
     "message": "Example using locales + i18n!",
     "description": "Description of the extension."
+  },
+  "settings_useComma": {
+    "message": "Use Commas",
+    "description": "Label for the option to use commas"
+  },
+  "settings_useComma_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use commas"
+  },
+  "settings_useMM": {
+    "message": "Use MM",
+    "description": "Label for the option to use MM"
+  },
+  "settings_useMM_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use MM"
+  },
+  "settings_useRounding": {
+    "message": "Use Rounding",
+    "description": "Label for the option to use rounding"
+  },
+  "settings_useRounding_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use rounding"
+  },
+  "settings_useMO": {
+    "message": "Use MO",
+    "description": "Label for the option to use MO"
+  },
+  "settings_useMO_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use MO"
+  },
+  "settings_useGiga": {
+    "message": "Use Giga",
+    "description": "Label for the option to use Giga"
+  },
+  "settings_useGiga_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use Giga"
+  },
+  "settings_useKelvin": {
+    "message": "Use Kelvin",
+    "description": "Label for the option to use Kelvin"
+  },
+  "settings_useKelvin_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use Kelvin"
+  },
+  "settings_useBrackets": {
+    "message": "Use Brackets",
+    "description": "Label for the option to use brackets"
+  },
+  "settings_useBrackets_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use brackets"
+  },
+  "settings_useBold": {
+    "message": "Use Bold",
+    "description": "Label for the option to use bold"
+  },
+  "settings_useBold_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use bold"
+  },
+  "settings_exclusiveMode": {
+    "message": "Use Exclusive Mode",
+    "description": "Label for the option to enable exclusive mode?"
+  },
+  "settings_exclusiveMode_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to enable exclusive mode"
+  },
+  "settings_convertBracketed": {
+    "message": "Convert Bracketed",
+    "description": "Label for the option to convert bracketed?"
+  },
+  "settings_convertBracketed_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to convert bracketed"
+  },
+  "settings_includeQuotes": {
+    "message": "Include Quotes",
+    "description": "Label for the option to include quotes?"
+  },
+  "settings_includeQuotes_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to include quotes"
+  },
+  "settings_includeImproperSymbols": {
+    "message": "Include Quotes",
+    "description": "Label for the option to include improper symbols?"
+  },
+  "settings_includeImproperSymbols_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to include improper symbols"
+  },
+  "settings_matchIn": {
+    "message": "Match In",
+    "description": "Label for the option to match in????"
+  },
+  "settings_matchIn_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to match in???"
+  },
+  "settings_useSpaces": {
+    "message": "Use Spaces",
+    "description": "Label for the option to use spaces"
+  },
+  "settings_useSpaces_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use spaces"
   }
 }

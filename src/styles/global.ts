@@ -22,8 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: hsl(var(--colors-highContrast));
-    /* background-color: hsl(var(--colors-bg)); */
-    background-color: green;
+    background-color: hsl(var(--colors-bg));
     transition: background var(--theme-transition), color var(--theme-transition);
     font-family: var(--fonts-body);
   }
