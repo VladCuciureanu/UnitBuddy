@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import "./index.css"
-import GlobalStyle from "~styles/global"
+import GlobalStyle from "~/shared/styles/global"
 import ContentPane from "./components/content-pane"
 
 function OptionsPage() {

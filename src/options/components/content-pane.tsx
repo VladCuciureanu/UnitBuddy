@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { useStorage } from "@plasmohq/storage/hook"
-import type { ExtensionSettings } from "~shared/types/settings"
+import type { ExtensionSettings } from "~/shared/types/settings"
 import Option from "./option"
-import MeasurementSystemSwitch from "./option/special/measurement-system"
+import MeasurementSystemOption from "./option/special/measurement-system"
 
 export default function ContentPane() {
   const [settings, setSettings] = useStorage<ExtensionSettings>("settings")
@@ -18,7 +18,7 @@ export default function ContentPane() {
   return (
     <Container>
       <Category>Measurement System</Category>
-      <MeasurementSystemSwitch
+      <MeasurementSystemOption
         name="measurementSystem"
         value={settings.measurementSystem}
         onChange={(value) => setValue("measurementSystem", value)}

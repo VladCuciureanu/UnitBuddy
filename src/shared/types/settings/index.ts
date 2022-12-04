@@ -1,5 +1,5 @@
 import * as t from "io-ts"
-import { makeEnumRuntimeType, withDefault } from "~shared/helpers/runtime"
+import { makeEnumRuntimeType, withDefault } from "~/shared/helpers/runtime"
 import { MeasurementSystems } from "./enums"
 
 export const UnitBuddySettings = t.type({

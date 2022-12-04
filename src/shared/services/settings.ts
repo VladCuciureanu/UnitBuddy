@@ -1,8 +1,8 @@
 import { fold, isRight } from "fp-ts/lib/Either"
 import { pipe } from "fp-ts/lib/function"
 import _ from "lodash"
-import { ExtensionStorage } from "~shared/helpers/web-extension"
-import { ExtensionSettings, UnitBuddySettings } from "~types/settings"
+import { ExtensionStorage } from "~/shared/helpers/web-extension"
+import { ExtensionSettings, UnitBuddySettings } from "~/shared/types/settings"
 
 export async function getValidatedSettings(): Promise<ExtensionSettings> {
   const currentSettings = await ExtensionStorage.get<

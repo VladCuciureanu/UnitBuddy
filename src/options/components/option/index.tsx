@@ -1,5 +1,4 @@
 import BooleanOption from "./primitives/boolean-option"
-import MeasurementSystemSwitch from "./special/measurement-system"
 
 export type OptionProp = {
   name: string
@@ -8,17 +7,6 @@ export type OptionProp = {
 }
 
 export default function Option(props: OptionProp) {
-  switch (props.name) {
-    case "measurementSystem":
-      return (
-        <MeasurementSystemSwitch
-          name={props.name}
-          value={props.value}
-          onChange={props.onChange}
-        />
-      )
-  }
-
   switch (typeof props.value) {
     case "string":
       return <div>string</div>
@@ -33,6 +21,10 @@ export default function Option(props: OptionProp) {
         />
       )
     default:
-      return <div>unknown</div>
+      return (
+        <div>{`Unknown option type for option ${
+          props.name
+        }: ${typeof props.value}`}</div>
+      )
   }
 }
