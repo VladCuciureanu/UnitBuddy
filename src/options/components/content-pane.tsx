@@ -1,9 +1,6 @@
 import styled from "styled-components"
-
 import { useStorage } from "@plasmohq/storage/hook"
-
-import type { ExtensionSettings } from "~types/settings-types"
-
+import type { ExtensionSettings } from "~shared/types/settings"
 import Option from "./option"
 import MeasurementSystemSwitch from "./option/special/measurement-system"
 
@@ -29,7 +26,7 @@ export default function ContentPane() {
 
       <Category>Miscellaneous</Category>
       {Object.keys(settings).map((key) => {
-        if (key === "measurementSystem") return <></>
+        if (["measurementSystem"].includes(key)) return <></>
         return (
           <Option
             key={key}

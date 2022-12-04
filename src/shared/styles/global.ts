@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-
 import cssReset from "./reset"
 import { darkTheme, lightTheme } from "./theme"
 import { cssVariables } from "./variables"
