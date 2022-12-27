@@ -118,5 +118,21 @@
   "settings_useSpaces_description": {
     "message": "Lorem Ipsum",
     "description": "Description text for the option to use spaces"
+  },
+  "settings_measurementSystem_metric": {
+    "message": "Metric",
+    "description": "Label for the option to use spaces"
+  },
+  "settings_measurementSystem_metric_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use spaces"
+  },
+  "settings_measurementSystem_imperial": {
+    "message": "Imperial",
+    "description": "Label for the option to use spaces"
+  },
+  "settings_measurementSystem_imperial_description": {
+    "message": "Lorem Ipsum",
+    "description": "Description text for the option to use spaces"
   }
 }

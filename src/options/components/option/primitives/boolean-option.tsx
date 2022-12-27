@@ -1,30 +1,16 @@
-import { useEffect, useState } from "react"
 import styled from "styled-components"
-import type { OptionProp } from ".."
+import type { OptionProps } from ".."
 
-export default function BooleanOption(props: OptionProp) {
-  const [label, setLabel] = useState("")
-  const [description, setDescription] = useState<string | undefined>(undefined)
-
-  useEffect(() => {
-    const labelLocaleId = `settings_${props.name}`
-    const descriptionLocaleId = `${labelLocaleId}_description`
-    let label = chrome.i18n.getMessage(labelLocaleId)
-    let description = chrome.i18n.getMessage(descriptionLocaleId)
-    if (label.length < 1) {
-      label = labelLocaleId
-    }
-    if (description.length < 1) {
-      description = undefined
-    }
-    setLabel(label)
-    setDescription(description)
-  }, [])
+export default function BooleanOption(props: OptionProps) {
+  const label = chrome.i18n.getMessage(`settings_${props.name}`)
+  const description = chrome.i18n.getMessage(
+    `settings_${props.name}_description`
+  )
 
   return (
     <Container>
       <Wrapper>
-        <Label>{label}</Label>
+        <Label>{`${label}`}</Label>
         <input
           type={"checkbox"}
           checked={props.value as boolean}
